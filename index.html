@@ -158,8 +158,7 @@
     <section id="book" class="book">
         <h2>Book an Appointment</h2>
         <p>Schedule a consultation with us from Monday to Friday. Select a date and time slot below.</p>
-                    <label for="date">Preferred Date (Mon-Fri):</label>
-
+        <form action="https://formspree.io/f/mjggwdlo" method="post">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -167,7 +166,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="date">Preferred Date (Mon-Fri):</label>
-            <input type="date" id="date" name="date" min="2019-10-01" max="2050-12-31" required> <!-- Adjust min/max as needed -->
+            <input type="date" id="date" name="date" min="2019-10-01" max="2050-12-31" required>
 
             <label for="time">Preferred Time Slot:</label>
             <select id="time" name="time" required>
@@ -184,7 +183,7 @@
             <label for="message">Message (Optional):</label>
             <textarea id="message" name="message" rows="4"></textarea>
 
-            <button type="submit">Book Appointment</button>
+            <button type="submit" name="submit">Book Appointment</button>
         </form>
     </section>
 
@@ -196,7 +195,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Insights Architect. All rights reserved.</p>
+        <p>&copy; 2023 Insights Architect. All rights reserved.</p>
     </footer>
 
     <script>
