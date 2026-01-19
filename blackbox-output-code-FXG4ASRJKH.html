@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Architect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .about, .services, .contact {
+            margin-bottom: 2rem;
+        }
+        .founders {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .founder {
+            text-align: center;
+            margin: 1rem;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            background-color: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        form button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights Architect</h1>
+        <p>Empowering Small Startups and Businesses with Data-Driven Insights</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#book">Book Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Insights Architect</h2>
+        <p>We are data analysts specializing in helping small startups and businesses improve their KPIs through actionable business insights. Using Python, SQL, and Machine Learning, we provide current analytics and future predictions to drive your success.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Insights Architect was founded by two passionate data analysts, Priyanka Saha and Neha Mishra. Together, we bring expertise in data science to transform your business operations.</p>
+        <div class="founders">
+            <div class="founder">
+                <h3>Priyanka Saha</h3>
+                <p>Co-founder and Data Analyst</p>
+                <p>Email: <a href="mailto:sahapriyankaa011@gmail.com">sahapriyankaa011@gmail.com</a></p>
+            </div>
+            <div class="founder">
+                <h3>Neha Mishra</h3>
+                <p>Co-founder and Data Analyst</p>
+                <p>Email: <a href="mailto:mishra610neha@gmail.com">mishra610neha@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>KPI Improvement:</strong> Analyze your key performance indicators and suggest strategies to enhance them.</li>
+            <li><strong>Business Insights:</strong> Uncover hidden patterns in your data to make informed decisions.</li>
+            <li><strong>Current Analytics:</strong> Provide real-time data analysis using Python and SQL.</li>
+            <li><strong>Future Predictions:</strong> Leverage Machine Learning models to forecast trends and outcomes.</li>
+        </ul>
+    </section>
+
+    <section id="book" class="book">
+        <h2>Book an Appointment</h2>
+        <p>Schedule a consultation with us from Monday to Friday. Select a date and time slot below.</p>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date (Mon-Fri):</label>
+            <input type="date" id="date" name="date" min="2023-10-01" max="2023-12-31" required> <!-- Adjust min/max as needed -->
+
+            <label for="time">Preferred Time Slot:</label>
+            <select id="time" name="time" required>
+                <option value="">Select a time</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+            </select>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch for more information or inquiries.</p>
+        <p>Email Priyanka: <a href="mailto:sahapriyankaa011@gmail.com">sahapriyankaa011@gmail.com</a></p>
+        <p>Email Neha: <a href="mailto:mishra610neha@gmail.com">mishra610neha@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Insights Architect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript to restrict date picker to Mon-Fri
+        document.getElementById('date').addEventListener('input', function() {
+            const date = new Date(this.value);
+            const day = date.getDay();
+            if (day === 0 || day === 6) { // 0 = Sunday, 6 = Saturday
+                alert('Please select a weekday (Monday to Friday).');
+                this.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
